@@ -18,8 +18,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${inter.className} bg-gray-900 text-white min-h-screen`}>{children}</body>
+    <html lang="en">
+      <body 
+        className={`${inter.className} min-h-screen`}
+        style={{ 
+          background: 'linear-gradient(to bottom, rgb(15, 15, 25), rgb(25, 25, 40))',
+          color: 'white'
+        }}
+      >
+        {children}
+      </body>
     </html>
   );
 }
